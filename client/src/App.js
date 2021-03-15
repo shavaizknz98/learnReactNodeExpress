@@ -43,7 +43,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ShoppingList time={this.state.datetime} data={this.state.shoppingData} />
+        <ShoppingList time={this.state.datetime} />
         <p className="express-connected">{this.state.data}</p>
       </div>
     );

@@ -29,14 +29,17 @@ export class ShoppingList extends Component {
 
     render() {
 
-        console.log(this.state.shoppingData);
         let products = this.state.shoppingData ? this.state.shoppingData.products : null;
         var content = <tbody><tr><td>Loading...</td></tr></tbody>;
 
         if (products) {
-            console.log(products);
             for (var vendor in products) {
-                console.log(Object.keys(products[vendor]));
+
+                console.log(products[vendor]);
+                for (var productsKey in products[vendor]) {
+                    console.log(productsKey);
+                    
+                }
 
                 content = <tbody>
                     <tr>
